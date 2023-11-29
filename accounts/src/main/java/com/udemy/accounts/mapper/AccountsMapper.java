@@ -6,9 +6,9 @@ import com.udemy.accounts.entity.Account;
 public class AccountsMapper {
 
     public static AccountsDTO mapToAccountsDto(Account account, AccountsDTO accountsDTO){
-        accountsDTO.setAccountNumber(accountsDTO.getAccountNumber());
+        accountsDTO.setAccountNumber(account.getAccountNumber());
         accountsDTO.setAccountType(account.getAccountType());
-        accountsDTO.setBranchAddress(accountsDTO.getBranchAddress());
+        accountsDTO.setBranchAddress(account.getBranchAddress());
         return accountsDTO;
     }
 
