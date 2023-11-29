@@ -17,11 +17,10 @@ public class Cards {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private Integer cardId;
-    private Integer customerId;
+    private String mobileNumber;
     private String cardNumber;
     private String cardType;
     private Integer totalLimit;
     private Integer amountUsed;
     private Integer availableAmount;
-    private LocalDateTime createdDt;
 }
