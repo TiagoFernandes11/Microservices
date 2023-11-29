@@ -8,13 +8,13 @@ import com.udemy.loans.execption.ResourceNotFoundException;
 import com.udemy.loans.mapper.LoansMapper;
 import com.udemy.loans.repository.LoansRepository;
 import com.udemy.loans.service.ILoansService;
-import org.apache.catalina.mapper.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.Optional;
 import java.util.Random;
 
+@Service
 public class LoansServiceImpl implements ILoansService {
 
     @Autowired

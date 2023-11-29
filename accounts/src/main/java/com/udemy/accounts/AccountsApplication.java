@@ -1,4 +1,4 @@
-package com.udemy.Accounts;
+package com.udemy.accounts;
 
 import io.swagger.v3.oas.annotations.ExternalDocumentation;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;

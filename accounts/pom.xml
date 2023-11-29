@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.udemy</groupId>
-	<artifactId>Accounts</artifactId>
+	<artifactId>accounts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Accounts</name>
+	<name>accounts</name>
 	<description>Microservices for Accounts</description>
 	<properties>
 		<java.version>17</java.version>

@@ -9,8 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface LoansRepository extends JpaRepository<Loans, Integer> {
-
-    List<Loans> findByCustomerIdOrderByStartDtDesc(int customerId);
     Optional<Loans> findByMobileNumber(String mobileNumber);
     Optional<Loans> findByLoanNumber(String loanNumber);
 
