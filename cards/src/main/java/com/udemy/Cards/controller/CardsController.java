@@ -38,8 +38,8 @@ public class CardsController {
             description = "HTTP Status CREATED"
     )
     @PostMapping("/create")
-    public ResponseEntity<ResponseDTO> createLoan(String mobileNuber){
-        cardsService.createCard(mobileNuber);
+    public ResponseEntity<ResponseDTO> createLoan(String mobileNumber){
+        cardsService.createCard(mobileNumber);
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(new ResponseDTO(CardsConstants.STATUS_201,CardsConstants.MESSAGE_201));
     }
@@ -52,7 +52,7 @@ public class CardsController {
             responseCode = "200",
             description = "HTTP Status OK"
     )
-    @GetMapping
+    @GetMapping("/fetch")
     public ResponseEntity<CardsDto> fetchLoansDetails(@RequestParam
                                                       @Pattern(regexp = "^$|[0-9]{10}", message = "AccountNumber must be 10 digits")
                                                       String mobileNumber){
