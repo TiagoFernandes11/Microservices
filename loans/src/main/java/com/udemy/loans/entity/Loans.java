@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
 
 import java.util.Date;
 
@@ -13,19 +14,20 @@ import java.util.Date;
 public class Loans {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int loanNumber;
+    @GeneratedValue(strategy= GenerationType.AUTO,generator="native")
+    @GenericGenerator(name = "native",strategy = "native")
+    private Long loanId;
 
-    private int customerId;
+    private String mobileNumber;
 
-    private Date startDt;
+    private String loanNumber;
 
     private String loanType;
 
     private int totalLoan;
 
-    private int outstandingAmount;
+    private int amountPaid;
 
-    private String createDt;
+    private int outstandingAmount;
 
 }

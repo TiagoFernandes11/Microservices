@@ -7,24 +7,26 @@ import java.util.Date;
 
 public class LoansMapper {
 
-    public static LoansDTO mapToLoansDTO(Loans loans, LoansDTO loansDTO){
-        loansDTO.setCustomerId(loans.getCustomerId());
-        loansDTO.setStartDt(loans.getStartDt());
-        loansDTO.setLoanType(loans.getLoanType());
-        loansDTO.setTotalLoan(loans.getTotalLoan());
-        loansDTO.setOutstandingAmount(loans.getOutstandingAmount());
-        loansDTO.setCreateDt(loans.getCreateDt());
-        return loansDTO;
+
+    public static LoansDTO mapToLoansDto(Loans loans, LoansDTO loansDto) {
+        loansDto.setLoanNumber(loans.getLoanNumber());
+        loansDto.setLoanType(loans.getLoanType());
+        loansDto.setMobileNumber(loans.getMobileNumber());
+        loansDto.setTotalLoan(loans.getTotalLoan());
+        loansDto.setAmountPaid(loans.getAmountPaid());
+        loansDto.setOutstandingAmount(loans.getOutstandingAmount());
+        return loansDto;
     }
 
-    public static Loans mapToLoansDTO(LoansDTO loansDTO, Loans loans){
-        loans.setCustomerId(loansDTO.getCustomerId());
-        loans.setStartDt(loansDTO.getStartDt());
-        loans.setLoanType(loansDTO.getLoanType());
-        loans.setTotalLoan(loansDTO.getTotalLoan());
-        loans.setOutstandingAmount(loansDTO.getOutstandingAmount());
-        loans.setCreateDt(loansDTO.getCreateDt());
+    public static Loans mapToLoans(LoansDTO loansDto, Loans loans) {
+        loans.setLoanNumber(loansDto.getLoanNumber());
+        loans.setLoanType(loansDto.getLoanType());
+        loans.setMobileNumber(loansDto.getMobileNumber());
+        loans.setTotalLoan(loansDto.getTotalLoan());
+        loans.setAmountPaid(loansDto.getAmountPaid());
+        loans.setOutstandingAmount(loansDto.getOutstandingAmount());
         return loans;
     }
+
 
 }
