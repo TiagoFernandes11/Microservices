@@ -1,4 +1,4 @@
-package com.udemy.loans.execption;
+package com.udemy.loans.exception;
 
 import com.udemy.loans.dto.ErrorResponseDTO;
 import org.springframework.http.HttpHeaders;

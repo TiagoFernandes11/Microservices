@@ -1,4 +1,4 @@
-package com.udemy.loans.execption;
+package com.udemy.loans.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
