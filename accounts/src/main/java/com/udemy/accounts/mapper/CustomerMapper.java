@@ -1,7 +1,7 @@
-package com.udemy.Accounts.mapper;
+package com.udemy.accounts.mapper;
 
-import com.udemy.Accounts.dto.CustomerDTO;
-import com.udemy.Accounts.entity.Customer;
+import com.udemy.accounts.dto.CustomerDTO;
+import com.udemy.accounts.entity.Customer;
 
 public class CustomerMapper {
 

@@ -1,17 +1,17 @@
-package com.udemy.Accounts.service.impl;
+package com.udemy.accounts.service.impl;
 
-import com.udemy.Accounts.constants.AccountConstants;
-import com.udemy.Accounts.dto.AccountsDTO;
-import com.udemy.Accounts.dto.CustomerDTO;
-import com.udemy.Accounts.entity.Account;
-import com.udemy.Accounts.entity.Customer;
-import com.udemy.Accounts.exception.CustomerAlreadyExistException;
-import com.udemy.Accounts.exception.ResourceNotFoundException;
-import com.udemy.Accounts.mapper.AccountsMapper;
-import com.udemy.Accounts.mapper.CustomerMapper;
-import com.udemy.Accounts.repository.AccountsRepository;
-import com.udemy.Accounts.repository.CustomerRepository;
-import com.udemy.Accounts.service.IAccountsService;
+import com.udemy.accounts.constants.AccountConstants;
+import com.udemy.accounts.dto.AccountsDTO;
+import com.udemy.accounts.dto.CustomerDTO;
+import com.udemy.accounts.entity.Account;
+import com.udemy.accounts.entity.Customer;
+import com.udemy.accounts.exception.CustomerAlreadyExistException;
+import com.udemy.accounts.exception.ResourceNotFoundException;
+import com.udemy.accounts.mapper.AccountsMapper;
+import com.udemy.accounts.mapper.CustomerMapper;
+import com.udemy.accounts.repository.AccountsRepository;
+import com.udemy.accounts.repository.CustomerRepository;
+import com.udemy.accounts.service.IAccountsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

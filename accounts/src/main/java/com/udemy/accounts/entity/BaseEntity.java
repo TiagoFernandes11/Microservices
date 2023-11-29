@@ -1,4 +1,4 @@
-package com.udemy.Accounts.entity;
+package com.udemy.accounts.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

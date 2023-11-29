@@ -1,10 +1,10 @@
-package com.udemy.Accounts.controller;
+package com.udemy.accounts.controller;
 
-import com.udemy.Accounts.constants.AccountConstants;
-import com.udemy.Accounts.dto.CustomerDTO;
-import com.udemy.Accounts.dto.ErrorResponseDTO;
-import com.udemy.Accounts.dto.ResponseDTO;
-import com.udemy.Accounts.service.IAccountsService;
+import com.udemy.accounts.constants.AccountConstants;
+import com.udemy.accounts.dto.CustomerDTO;
+import com.udemy.accounts.dto.ErrorResponseDTO;
+import com.udemy.accounts.dto.ResponseDTO;
+import com.udemy.accounts.service.IAccountsService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

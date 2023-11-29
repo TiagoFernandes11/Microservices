@@ -1,4 +1,4 @@
-package com.udemy.Accounts.audit;
+package com.udemy.accounts.audit;
 
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.stereotype.Component;

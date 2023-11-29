@@ -1,6 +1,6 @@
-package com.udemy.Accounts.repository;
+package com.udemy.accounts.repository;
 
-import com.udemy.Accounts.entity.Account;
+import com.udemy.accounts.entity.Account;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

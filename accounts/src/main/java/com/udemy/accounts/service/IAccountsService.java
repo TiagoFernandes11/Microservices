@@ -1,6 +1,6 @@
-package com.udemy.Accounts.service;
+package com.udemy.accounts.service;
 
-import com.udemy.Accounts.dto.CustomerDTO;
+import com.udemy.accounts.dto.CustomerDTO;
 
 public interface IAccountsService {
     void createAccount(CustomerDTO customerDTO);

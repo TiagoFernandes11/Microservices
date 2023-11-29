@@ -1,6 +1,6 @@
-package com.udemy.Accounts.exception;
+package com.udemy.accounts.exception;
 
-import com.udemy.Accounts.dto.ErrorResponseDTO;
+import com.udemy.accounts.dto.ErrorResponseDTO;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;

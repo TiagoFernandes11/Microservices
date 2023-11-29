@@ -1,4 +1,4 @@
-package com.udemy.Accounts.constants;
+package com.udemy.accounts.constants;
 
 public class AccountConstants {
 
