@@ -10,11 +10,9 @@ import java.time.LocalDateTime;
 import java.util.Random;
 
 public class CardsServiceImpl implements ICardsService {
-    @Autowired
-    private CardsRepository cardsRepository;
 
     @Override
-    public void createCard(Customer customer) {
+    public Cards createCard(Customer customer) {
         Cards newCard = new Cards();
         newCard.setCustomerId(customer.getCustomerId());
         newCard.setCardNumber(new Random().nextLong(90000000000L) + 10000000000L + "");
@@ -23,7 +21,7 @@ public class CardsServiceImpl implements ICardsService {
         newCard.setAvailableAmount(5000);
         newCard.setTotalLimit(5000);
         newCard.setCreatedDt(LocalDateTime.now());
-        cardsRepository.save(newCard);
+        return newCard;
     }
 
 

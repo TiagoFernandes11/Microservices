@@ -37,6 +37,6 @@ public class CardsController {
 
     @PostMapping
     public void createNewCard(@RequestBody Customer customer){
-        service.createCard(customer);
+        cardsRepository.save(service.createCard(customer));
     }
 }
