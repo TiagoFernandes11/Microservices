@@ -8,6 +8,8 @@ services:
       resources:
         limits:
           memory: 700m
+    networks:
+      - eazybank
   loans:
     image: "tiagofernandesribeiro/loans:v1"
     container_name: loans-ms
@@ -17,6 +19,8 @@ services:
       resources:
         limits:
           memory: 700m
+    networks:
+      - eazybank
   cards:
     image: "tiagofernandesribeiro/cards:v1"
     container_name: cards-ms
@@ -26,3 +30,10 @@ services:
       resources:
         limits:
           memory: 700m
+    networks:
+      - eazybank
+networks:
+  eazybank:
+    driver: "bridge"
+
+
