@@ -9,9 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.udemy</groupId>
-	<artifactId>Cards</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>Cards</name>
+	<artifactId>cards</artifactId>
+	<version>v1</version>
+	<packaging>jar</packaging>
+	<name>cards</name>
 	<description>Cards Microservices for Eazy Bank</description>
 	<properties>
 		<java.version>17</java.version>
@@ -66,8 +67,18 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>tiagofernandesribeiro/${project.artifactId}:v1</name>
+					</image>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
