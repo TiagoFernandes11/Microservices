@@ -6,14 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="595e4be2-9ef5-4860-be24-386b9c14f242" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application_prod.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application_qa.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application_prod.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application_qa.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/AccountsContactInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/AccountsContactInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/CardsContactInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/CardsContactInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/LoansContactInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/LoansContactInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
