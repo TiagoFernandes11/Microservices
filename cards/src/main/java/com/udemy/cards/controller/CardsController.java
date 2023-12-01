@@ -1,10 +1,14 @@
 package com.udemy.cards.controller;
 
 import com.udemy.cards.constants.CardsConstants;
+import com.udemy.cards.dto.CardsContactInfoDTO;
 import com.udemy.cards.dto.CardsDto;
+import com.udemy.cards.dto.ErrorResponseDTO;
 import com.udemy.cards.dto.ResponseDTO;
 import com.udemy.cards.service.impl.CardsServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -27,6 +31,9 @@ import org.springframework.web.bind.annotation.*;
 public class CardsController {
     @Autowired
     private CardsServiceImpl cardsService;
+
+    @Autowired
+    private CardsContactInfoDTO cardsContactInfoDto;
 
     @Operation(
             summary = "CREATE card REST API",
@@ -123,5 +130,30 @@ public class CardsController {
         }
     }
 
+    @Operation(
+            summary = "Get Contact Info",
+            description = "Contact Info details that can be reached out in case of any issues"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDTO.class)
+                    )
+            )
+    }
+    )
+    @GetMapping("/contact-info")
+    public ResponseEntity<CardsContactInfoDTO> getContactInfo() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(cardsContactInfoDto);
+    }
 
 }
+

@@ -1,6 +1,7 @@
 package com.udemy.accounts.controller;
 
 import com.udemy.accounts.constants.AccountConstants;
+import com.udemy.accounts.dto.AccountsContactInfoDTO;
 import com.udemy.accounts.dto.CustomerDTO;
 import com.udemy.accounts.dto.ErrorResponseDTO;
 import com.udemy.accounts.dto.ResponseDTO;
@@ -31,6 +32,9 @@ public class AccountController {
 
     @Autowired
     private IAccountsService iAccountsService;
+
+    @Autowired
+    private AccountsContactInfoDTO accountsContactInfoDto;
 
     @Operation(
             summary = "CREATE account REST API",
@@ -129,5 +133,30 @@ public class AccountController {
                     .body(new ResponseDTO(AccountConstants.STATUS_500, AccountConstants.MESSAGE_500));
 
         }
+    }
+
+    @Operation(
+            summary = "Get Contact Info",
+            description = "Contact Info details that can be reached out in case of any issues"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDTO.class)
+                    )
+            )
+    }
+    )
+    @GetMapping("/contact-info")
+    public ResponseEntity<AccountsContactInfoDTO> getContactInfo() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(accountsContactInfoDto);
     }
 }

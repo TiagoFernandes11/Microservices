@@ -1,11 +1,15 @@
 package com.udemy.loans.controller;
 
 import com.udemy.loans.constants.LoansConstants;
+import com.udemy.loans.dto.ErrorResponseDTO;
+import com.udemy.loans.dto.LoansContactInfoDTO;
 import com.udemy.loans.dto.LoansDTO;
 import com.udemy.loans.dto.ResponseDTO;
 import com.udemy.loans.repository.LoansRepository;
 import com.udemy.loans.service.ILoansService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -28,6 +32,9 @@ import org.springframework.web.bind.annotation.*;
 public class LoansController {
     @Autowired
     private ILoansService iLoansService;
+
+    @Autowired
+    private LoansContactInfoDTO loansContactInfoDto;
 
     @Operation(
             summary = "CREATE loan REST API",
@@ -122,6 +129,31 @@ public class LoansController {
                     .body(new ResponseDTO(LoansConstants.STATUS_417, LoansConstants.MESSAGE_417_DELETE));
 
         }
+    }
+
+    @Operation(
+            summary = "Get Contact Info",
+            description = "Contact Info details that can be reached out in case of any issues"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDTO.class)
+                    )
+            )
+    }
+    )
+    @GetMapping("/contact-info")
+    public ResponseEntity<LoansContactInfoDTO> getContactInfo() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(loansContactInfoDto);
     }
 
 
