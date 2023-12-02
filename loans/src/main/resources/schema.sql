@@ -12,3 +12,5 @@ CREATE TABLE IF NOT EXISTS `loans` (
   `updated_by` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`loan_id`)
 );
+
+--needs to be inserted in cardsdb
