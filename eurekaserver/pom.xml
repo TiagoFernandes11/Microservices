@@ -11,8 +11,8 @@
 	<groupId>com.udemy</groupId>
 	<artifactId>eurekaserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Service Discovery server for EazyBank</name>
-	<description>Demo project for Spring Boot</description>
+	<name>eurekaserver</name>
+	<description>Service Discovery server for EazyBank</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.0-RC1</spring-cloud.version>
