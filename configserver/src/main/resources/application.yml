@@ -14,7 +14,7 @@ spring:
           search-locations: "classpath:/config"
         git:
           uri: "https://github.com/TiagoFernandes11/eazybank-config.git"
-          default-label: main
+          default-label: master
           timeout: 5
           clone-on-start: true
           force-pull: true
