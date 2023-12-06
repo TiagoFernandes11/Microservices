@@ -57,10 +57,7 @@ services:
       start_period: 10s
     extends:
       file: common-config.yml
-      service: microservice-base-config
-    depends_on:
-      configserver:
-        condition: service_healthy
+      service: microservice-configserver-config
     environment:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
@@ -77,7 +74,7 @@ services:
         condition: service_healthy
     extends:
       file: common-config.yml
-      service: microservice-configserver-config
+      service: microservice-eureka-config
 
   loans:
     image: "tiagofernandesribeiro/loans:v1"
@@ -92,7 +89,7 @@ services:
         condition: service_healthy
     extends:
       file: common-config.yml
-      service: microservice-configserver-config
+      service: microservice-eureka-config
 
   cards:
     image: "tiagofernandesribeiro/cards:v1"
@@ -107,7 +104,7 @@ services:
         condition: service_healthy
     extends:
       file: common-config.yml
-      service: microservice-configserver-config
+      service: microservice-eureka-config
 
 networks:
   eazybank:
