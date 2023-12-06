@@ -44,7 +44,7 @@ public class CardsController {
             description = "HTTP Status CREATED"
     )
     @PostMapping("/create")
-    public ResponseEntity<ResponseDTO> createLoan(String mobileNumber){
+    public ResponseEntity<ResponseDTO> createCard(String mobileNumber){
         cardsService.createCard(mobileNumber);
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(new ResponseDTO(CardsConstants.STATUS_201,CardsConstants.MESSAGE_201));
@@ -59,7 +59,7 @@ public class CardsController {
             description = "HTTP Status OK"
     )
     @GetMapping("/fetch")
-    public ResponseEntity<CardsDto> fetchLoansDetails(@RequestParam
+    public ResponseEntity<CardsDto> fetchCardDetails(@RequestParam
                                                       @Pattern(regexp = "^$|[0-9]{10}", message = "AccountNumber must be 10 digits")
                                                       String mobileNumber){
         return ResponseEntity.status(HttpStatus.OK)
@@ -82,7 +82,7 @@ public class CardsController {
     }
     )
     @PutMapping("/update")
-    public ResponseEntity<ResponseDTO> updateAccountDetails(@Valid @RequestBody CardsDto cardsDto){
+    public ResponseEntity<ResponseDTO> updateCardDetails(@Valid @RequestBody CardsDto cardsDto){
         boolean isUptated = cardsService.updateCard(cardsDto);
         if(isUptated){
             return ResponseEntity
@@ -113,7 +113,7 @@ public class CardsController {
     }
     )
     @DeleteMapping("/delete")
-    public ResponseEntity<ResponseDTO> deleteAccountDetails(@RequestParam
+    public ResponseEntity<ResponseDTO> deleteCardDetails(@RequestParam
                                                             @Pattern(regexp = "^$|[0-9]{10}", message = "AccountNumber must be 10 digits")
                                                             String mobileNumber){
         boolean isDeleted = cardsService.deleteCard(mobileNumber);
