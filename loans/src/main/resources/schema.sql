@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS `loansdb`;
+
+USE `loansdb`;
+
 CREATE TABLE IF NOT EXISTS `loans` (
   `loan_id` int NOT NULL AUTO_INCREMENT,
   `mobile_number` varchar(15) NOT NULL,

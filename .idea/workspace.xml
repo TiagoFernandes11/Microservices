@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="595e4be2-9ef5-4860-be24-386b9c14f242" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/CustomerDetailsDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/ICustomerServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/impl/CustomerServicesImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.CardsApplication">
+  <component name="RunManager" selected="Application.AccountsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -138,9 +136,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CardsApplication" />
-        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.AccountsApplication" />
+        <item itemvalue="Application.LoansApplication" />
+        <item itemvalue="Application.CardsApplication" />
       </list>
     </recent_temporary>
   </component>
