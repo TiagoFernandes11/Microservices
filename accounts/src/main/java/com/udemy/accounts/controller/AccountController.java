@@ -6,6 +6,7 @@ import com.udemy.accounts.dto.CustomerDTO;
 import com.udemy.accounts.dto.ErrorResponseDTO;
 import com.udemy.accounts.dto.ResponseDTO;
 import com.udemy.accounts.service.IAccountsService;
+import io.github.resilience4j.retry.annotation.Retry;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -14,6 +15,8 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -29,6 +32,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
 @Validated
 public class AccountController {
+
+    private static final Logger logger = LoggerFactory.getLogger(AccountController.class);
 
     @Autowired
     private IAccountsService iAccountsService;
@@ -153,10 +158,19 @@ public class AccountController {
             )
     }
     )
+    @Retry(name = "getContactInfo", fallbackMethod = "getContactInfoFallback")
     @GetMapping("/contact-info")
     public ResponseEntity<AccountsContactInfoDTO> getContactInfo() {
+        logger.debug("getContactInfo() method invoked");
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(accountsContactInfoDto);
+    }
+
+    public ResponseEntity<String> getContactInfoFallback(Throwable throwable){
+        logger.debug("getContactInfoFallback() method invoked");
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body("Throwback contact-info message");
     }
 }
