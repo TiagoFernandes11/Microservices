@@ -6,6 +6,7 @@ import com.udemy.accounts.dto.CustomerDTO;
 import com.udemy.accounts.dto.ErrorResponseDTO;
 import com.udemy.accounts.dto.ResponseDTO;
 import com.udemy.accounts.service.IAccountsService;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import io.github.resilience4j.retry.annotation.Retry;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -18,6 +19,7 @@ import jakarta.validation.constraints.Pattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -37,6 +39,9 @@ public class AccountController {
 
     @Autowired
     private IAccountsService iAccountsService;
+
+    @Autowired
+    private Environment environment;
 
     @Autowired
     private AccountsContactInfoDTO accountsContactInfoDto;
@@ -138,6 +143,38 @@ public class AccountController {
                     .body(new ResponseDTO(AccountConstants.STATUS_500, AccountConstants.MESSAGE_500));
 
         }
+    }
+
+    @Operation(
+            summary = "Get Java Version Info",
+            description = "Java Version Info details that can be reached out in case of any issues"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDTO.class)
+                    )
+            )
+    }
+    )
+    @RateLimiter(name= "getJavaVersion", fallbackMethod = "getJavaVersionFallback")
+    @GetMapping("/java-version")
+    public ResponseEntity<String> getJavaVersion() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(environment.getProperty("JAVA_HOME"));
+    }
+
+    public ResponseEntity<String> getJavaVersionFallback(Throwable throwable) {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body("Java 17");
     }
 
     @Operation(
