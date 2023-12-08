@@ -43,6 +43,9 @@ management:
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 endpoints:
   shutdown:
@@ -59,7 +62,7 @@ eureka:
 
 info:
   app:
-    name: "Accounts"
+    name: "accounts"
     description: "Eazy Bank Accounts Application"
     version: "1.0.0"
 
@@ -67,7 +70,9 @@ logging:
   level:
     com:
       eazybytes:
-        cards: DEBUG
+        accounts: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
 
 resilience4j.circuitbreaker:
   configs:
