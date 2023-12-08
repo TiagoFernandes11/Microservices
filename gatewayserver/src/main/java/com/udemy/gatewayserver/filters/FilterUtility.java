@@ -1,4 +1,4 @@
-package com.eazybytes.gatewayserver.filters;
+package com.udemy.gatewayserver.filters;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;

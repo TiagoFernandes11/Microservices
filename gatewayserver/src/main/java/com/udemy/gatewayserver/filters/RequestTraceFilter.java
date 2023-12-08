@@ -1,4 +1,4 @@
-package com.eazybytes.gatewayserver.filters;
+package com.udemy.gatewayserver.filters;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
