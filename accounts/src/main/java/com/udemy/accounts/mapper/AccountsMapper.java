@@ -1,21 +1,22 @@
 package com.udemy.accounts.mapper;
 
-import com.udemy.accounts.dto.AccountsDTO;
-import com.udemy.accounts.entity.Account;
+import com.udemy.accounts.dto.AccountsDto;
+import com.udemy.accounts.entity.Accounts;
 
 public class AccountsMapper {
 
-    public static AccountsDTO mapToAccountsDto(Account account, AccountsDTO accountsDTO){
-        accountsDTO.setAccountNumber(account.getAccountNumber());
-        accountsDTO.setAccountType(account.getAccountType());
-        accountsDTO.setBranchAddress(account.getBranchAddress());
-        return accountsDTO;
+    public static AccountsDto mapToAccountsDto(Accounts accounts, AccountsDto accountsDto) {
+        accountsDto.setAccountNumber(accounts.getAccountNumber());
+        accountsDto.setAccountType(accounts.getAccountType());
+        accountsDto.setBranchAddress(accounts.getBranchAddress());
+        return accountsDto;
     }
 
-    public static Account matToAccounts(AccountsDTO accountsDTO, Account account){
-        account.setAccountNumber(accountsDTO.getAccountNumber());
-        account.setAccountType(accountsDTO.getAccountType());
-        account.setBranchAddress(accountsDTO.getBranchAddress());
-        return account;
+    public static Accounts mapToAccounts(AccountsDto accountsDto, Accounts accounts) {
+        accounts.setAccountNumber(accountsDto.getAccountNumber());
+        accounts.setAccountType(accountsDto.getAccountType());
+        accounts.setBranchAddress(accountsDto.getBranchAddress());
+        return accounts;
     }
+
 }

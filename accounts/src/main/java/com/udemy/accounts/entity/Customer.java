@@ -1,24 +1,24 @@
 package com.udemy.accounts.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
-@Data
 @Entity
-public class Customer extends BaseEntity{
+@Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
+public class Customer extends  BaseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name = "native", strategy = "native")
-    private Integer customerId;
+    @GeneratedValue(strategy= GenerationType.AUTO,generator="native")
+    @GenericGenerator(name = "native",strategy = "native")
+    @Column(name="customer_id")
+    private Long customerId;
 
-    @Column(length = 100)
     private String name;
 
-    @Column(length = 100)
     private String email;
 
-    @Column(length = 20)
+    @Column(name="mobile_number")
     private String mobileNumber;
+
 }

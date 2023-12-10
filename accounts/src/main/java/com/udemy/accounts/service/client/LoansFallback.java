@@ -1,6 +1,6 @@
 package com.udemy.accounts.service.client;
 
-import com.udemy.accounts.dto.LoansDTO;
+import com.udemy.accounts.dto.LoansDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class LoansFallback implements LoansFeignClient{
 
     @Override
-    public ResponseEntity<LoansDTO> fetchLoansDetails(String mobileNumber) {
+    public ResponseEntity<LoansDto> fetchLoanDetails(String correlationId, String mobileNumber) {
         return null;
     }
 }

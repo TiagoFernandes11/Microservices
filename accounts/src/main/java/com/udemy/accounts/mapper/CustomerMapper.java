@@ -1,29 +1,30 @@
 package com.udemy.accounts.mapper;
 
-import com.udemy.accounts.dto.CustomerDTO;
-import com.udemy.accounts.dto.CustomerDetailsDTO;
+import com.udemy.accounts.dto.CustomerDetailsDto;
+import com.udemy.accounts.dto.CustomerDto;
 import com.udemy.accounts.entity.Customer;
 
 public class CustomerMapper {
 
-    public static CustomerDTO mapToCustomerDto(Customer customer, CustomerDTO customerDTO){
-        customerDTO.setName(customer.getName());
-        customerDTO.setEmail(customer.getEmail());
-        customerDTO.setMobileNumber(customer.getMobileNumber());
-        return customerDTO;
+    public static CustomerDto mapToCustomerDto(Customer customer, CustomerDto customerDto) {
+        customerDto.setName(customer.getName());
+        customerDto.setEmail(customer.getEmail());
+        customerDto.setMobileNumber(customer.getMobileNumber());
+        return customerDto;
     }
 
-    public static CustomerDetailsDTO mapToCustomerDetailDto(Customer customer, CustomerDetailsDTO customerDetailsDTO){
-        customerDetailsDTO.setName(customer.getName());
-        customerDetailsDTO.setEmail(customer.getEmail());
-        customerDetailsDTO.setMobileNumber(customer.getMobileNumber());
-        return customerDetailsDTO;
+    public static CustomerDetailsDto mapToCustomerDetailsDto(Customer customer, CustomerDetailsDto customerDetailsDto) {
+        customerDetailsDto.setName(customer.getName());
+        customerDetailsDto.setEmail(customer.getEmail());
+        customerDetailsDto.setMobileNumber(customer.getMobileNumber());
+        return customerDetailsDto;
     }
 
-    public static Customer mapToCustomer(CustomerDTO customerDTO, Customer customer){
-        customer.setName(customerDTO.getName());
-        customer.setEmail(customerDTO.getEmail());
-        customer.setMobileNumber(customerDTO.getMobileNumber());
+    public static Customer mapToCustomer(CustomerDto customerDto, Customer customer) {
+        customer.setName(customerDto.getName());
+        customer.setEmail(customerDto.getEmail());
+        customer.setMobileNumber(customerDto.getMobileNumber());
         return customer;
     }
+
 }

@@ -1,9 +1,6 @@
 package com.udemy.cards.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -15,21 +12,21 @@ import org.hibernate.annotations.GenericGenerator;
 @NoArgsConstructor
 public class Cards extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO,generator="native")
-    @GenericGenerator(name = "native",strategy = "native")
-    private Long cardId;
+	@Id
+	@GeneratedValue(strategy= GenerationType.AUTO,generator="native")
+	@GenericGenerator(name = "native",strategy = "native")
+	private Long cardId;
 
-    private String mobileNumber;
+	private String mobileNumber;
 
-    private String cardNumber;
+	private String cardNumber;
 
-    private String cardType;
+	private String cardType;
 
-    private int totalLimit;
+	private int totalLimit;
 
-    private int amountUsed;
+	private int amountUsed;
 
-    private int availableAmount;
-
+	private int availableAmount;
+	
 }

@@ -1,7 +1,3 @@
-CREATE DATABASE IF NOT EXISTS `cardsdb`;
-
-USE `cardsdb`;
-
 CREATE TABLE IF NOT EXISTS `cards` (
   `card_id` int NOT NULL AUTO_INCREMENT,
   `mobile_number` varchar(15) NOT NULL,
@@ -16,5 +12,3 @@ CREATE TABLE IF NOT EXISTS `cards` (
   `updated_by` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`card_id`)
 );
-
---needs to be inserted in cardsdb

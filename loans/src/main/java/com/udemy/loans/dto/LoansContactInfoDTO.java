@@ -8,9 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 @ConfigurationProperties(prefix = "loans")
-@Getter
-@Setter
-public class LoansContactInfoDTO {
+@Getter @Setter
+public class LoansContactInfoDto {
 
     private String message;
     private Map<String, String> contactDetails;

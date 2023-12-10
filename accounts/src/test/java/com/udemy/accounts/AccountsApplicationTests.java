@@ -1,4 +1,4 @@
-package com.udemy.Accounts;
+package com.udemy.accounts;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

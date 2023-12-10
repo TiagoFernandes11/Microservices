@@ -1,14 +1,11 @@
 package com.udemy.loans.mapper;
 
-import com.udemy.loans.dto.LoansDTO;
+import com.udemy.loans.dto.LoansDto;
 import com.udemy.loans.entity.Loans;
-
-import java.util.Date;
 
 public class LoansMapper {
 
-
-    public static LoansDTO mapToLoansDto(Loans loans, LoansDTO loansDto) {
+    public static LoansDto mapToLoansDto(Loans loans, LoansDto loansDto) {
         loansDto.setLoanNumber(loans.getLoanNumber());
         loansDto.setLoanType(loans.getLoanType());
         loansDto.setMobileNumber(loans.getMobileNumber());
@@ -18,7 +15,7 @@ public class LoansMapper {
         return loansDto;
     }
 
-    public static Loans mapToLoans(LoansDTO loansDto, Loans loans) {
+    public static Loans mapToLoans(LoansDto loansDto, Loans loans) {
         loans.setLoanNumber(loansDto.getLoanNumber());
         loans.setLoanType(loansDto.getLoanType());
         loans.setMobileNumber(loansDto.getMobileNumber());
@@ -27,6 +24,5 @@ public class LoansMapper {
         loans.setOutstandingAmount(loansDto.getOutstandingAmount());
         return loans;
     }
-
 
 }

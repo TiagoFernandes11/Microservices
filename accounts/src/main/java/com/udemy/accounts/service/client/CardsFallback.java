@@ -1,13 +1,15 @@
 package com.udemy.accounts.service.client;
 
-import com.udemy.accounts.dto.CardsDTO;
+import com.udemy.accounts.dto.CardsDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
 @Component
 public class CardsFallback implements CardsFeignClient{
+
     @Override
-    public ResponseEntity<CardsDTO> fetchCardDetails(String mobileNumber) {
+    public ResponseEntity<CardsDto> fetchCardDetails(String correlationId, String mobileNumber) {
         return null;
     }
+
 }
