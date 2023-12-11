@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="595e4be2-9ef5-4860-be24-386b9c14f242" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/udemy/gatewayserver/config/KeycloakRoleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/udemy/message/MessageApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/udemy/message/dto/AccountsMsgDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/udemy/message/functions/MessageFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/src/test/java/com/udemy/message/MessageApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/com/udemy/gatewayserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/udemy/gatewayserver/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.lock.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.lock.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -41,26 +56,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConfigServer.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Eureka.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GatewayServer.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tiago Ribeiro/Documents/GitHub/Microservices/configserver/src/main/resources/config&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AccountsApplication.executor": "Run",
+    "Application.CardsApplication.executor": "Run",
+    "Application.ConfigServer.executor": "Run",
+    "Application.Eureka.executor": "Run",
+    "Application.GatewayServer.executor": "Run",
+    "Application.LoansApplication.executor": "Run",
+    "Maven.accounts [clean].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Tiago Ribeiro/Documents/GitHub/Microservices/message",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.udemy.gatewayserver.config" />
