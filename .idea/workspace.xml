@@ -5,126 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="595e4be2-9ef5-4860-be24-386b9c14f242" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/java/com/eazybytes/configserver/ConfigserverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/java/com/eazybytes/eurekaserver/EurekaserverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/src/test/java/com/eazybytes/eurekaserver/EurekaserverApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/AccountsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/audit/AuditAwareImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/constants/AccountConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/controller/AccountController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/controller/CustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/AccountsContactInfoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/AccountsDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/CardsDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/CustomerDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/CustomerDetailsDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/ErrorResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/LoansDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/ResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/entity/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/entity/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/entity/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/exception/CustomerAlreadyExistException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/mapper/AccountsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/mapper/CustomerMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/repository/AccountsRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/repository/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/IAccountsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/ICustomerServices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/client/CardsFallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/client/CardsFeignClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/client/LoansFallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/client/LoansFeignClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/impl/CustomerServicesImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/test/java/com/udemy/accounts/AccountsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/test/java/com/udemy/accounts/AccountsApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cards/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/cards/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/cards/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/CardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/CardsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/audit/AuditAwareImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/constants/CardsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/constants/CardsConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/CardsContactInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/CardsContactInfoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/CardsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/CardsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/ErrorResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/ErrorResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/dto/ResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/entity/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/entity/Cards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/exception/CardAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/exception/CardAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/exception/ResourceNotFoundedException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/mapper/CardsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/mapper/CardsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/repository/CardsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/repository/CardsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/service/ICardsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/service/ICardsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/service/impl/CardsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/udemy/cards/service/impl/CardsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/java/com/udemy/configserver/ConfigserverApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-prod.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-qa.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-prod.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-qa.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-prod.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-qa.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/test/java/com/udemy/configserver/ConfigserverApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/java/com/udemy/eurekaserver/EurekaserverApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/src/test/java/com/udemy/eurekaserver/EurekaserverApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/src/test/java/com/udemy/eurekaserver/ServiceDiscoveryServerForEazyBankApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/com/udemy/gatewayserver/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/udemy/gatewayserver/GatewayserverApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/test/java/com/eazybytes/gatewayserver/GatewayserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/test/java/com/eazybytes/configserver/ConfigserverApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/loans/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/loans/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/loans/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/LoansApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/audit/AuditAwareImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/constants/LoansConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/constants/LoansConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/controller/LoansController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/ErrorResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/ErrorResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/LoansContactInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/LoansContactInfoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/LoansDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/LoansDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/dto/ResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/entity/Loans.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/entity/Loans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/exception/LoanAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/mapper/LoansMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/mapper/LoansMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/repository/LoansRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/repository/LoansRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/service/ILoansService.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/service/ILoansService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/service/impl/LoansServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/udemy/loans/service/impl/LoansServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/java/com/eazybytes/configserver/ConfigserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/java/com/udemy/configserver/ConfigserverApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/test/java/com/eazybytes/configserver/ConfigserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/test/java/com/udemy/configserver/ConfigserverApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/java/com/eazybytes/eurekaserver/EurekaserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/java/com/udemy/eurekaserver/EurekaserverApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/test/java/com/eazybytes/eurekaserver/EurekaserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/test/java/com/udemy/eurekaserver/EurekaserverApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,26 +42,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.AccountsApplication.executor": "Run",
-    "Application.CardsApplication.executor": "Run",
-    "Application.ConfigServer.executor": "Run",
-    "Application.Eureka.executor": "Run",
-    "Application.GatewayServer.executor": "Run",
-    "Application.LoansApplication.executor": "Run",
-    "Maven.accounts [clean].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Tiago Ribeiro/Documents/GitHub/Microservices/configserver/src/main/resources/config",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ConfigServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Eureka.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GatewayServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.accounts [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tiago Ribeiro/Documents/GitHub/Microservices/configserver/src/main/resources/config&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Tiago Ribeiro\Documents\GitHub\Microservices\configserver\src\main\resources\config" />
@@ -271,8 +156,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AccountsApplication" />
-        <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.LoansApplication" />
+        <item itemvalue="Application.CardsApplication" />
       </list>
     </recent_temporary>
   </component>
