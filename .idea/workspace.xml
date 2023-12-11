@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="595e4be2-9ef5-4860-be24-386b9c14f242" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/message/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/udemy/message/MessageApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/udemy/message/dto/AccountsMsgDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/udemy/message/functions/MessageFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/test/java/com/udemy/message/MessageApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/dto/AccountsMsgDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.lock.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-23.0.1/data/h2/keycloakdb.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/entity/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/entity/Accounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/IAccountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/IAccountsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/udemy/accounts/service/impl/AccountsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/message/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
